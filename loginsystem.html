@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>登陆界面</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="ripple.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css"> 
+    <style>
+    .container{
+      position: static;
+      margin-top:10%;
+      height:700px;
+      width: 50%;
+    }
+    .jumbotron{
+      height: 80%;
+      padding-top:3%;
+      padding-bottom:3%;
+      padding-right:3%;
+      padding-left:3%;
+    }
+    .p{font-family: "Times New Roman","宋体",sans-serif;
+      font-size: 150%;
+      opacity:6;
+      color: rgb(1, 7, 0);}
+    body{
+        text-align:center;
+        background:url(green.jpg)  no-repeat center center;
+        background-size:cover;
+        background-attachment:fixed;
+        }
+    </style>
+</head>
+
+<body>
+<form action="confarm.php" method="post">
+    <div class="container">
+        <div  class="jumbotron" style="opacity:0.6">
+          <ul class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="signinsystem.html">登陆</a></li>
+            <li role="presentation" class="active"><a href="#">注册</a></li>
+          </ul>
+                <h1>请注册</h1><br>
+               <div class="col-md-6 col-md-offset-3"><br><br>
+                <p>请输入注册邮箱</p>
+                <input type="email" class="form-control" name="email" placeholder="邮箱" >
+                <br><br>
+                <p>请输入密码</p>
+                <input type="password" class="form-control" name="password" placeholder="密码">
+                <br>
+                <input type="submit" name="submit" value="注册" class="btn btn-primary btn-lg">
+                </div> 
+        </div></div>
+      </form>
+
+
+</body>
+
+</html>
